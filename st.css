@@ -1,0 +1,70 @@
+.alturaCarousel {
+  height: 91dvh;
+}
+.form-control::placeholder {
+  color: white !important;
+}
+@media (min-width: 1440px) {
+  .acceso {
+    width: 20rem !important;
+    img {
+      width: 40px;
+    }
+  }
+  .articulo {
+    width: 20rem !important;
+    img {
+      height: 300px;
+    }
+  }
+}
+body {
+  background-color: #070501;
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://www.shutterstock.com/image-vector/sky-clouds-anime-background-cloudy-600nw-2430402851.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card.product-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.card.product-card:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.btn-ver-mas {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-ver-mas:hover {
+  background-color: #e68a00;
+}
+

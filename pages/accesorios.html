@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gonzalez Isaias" />
+    <title>Tienda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/st.css" />
+
+    <style>
+                  body {
+                    background-color: #050401;
+                  }
+
+                  .card.product-card {
+                    background-color: #1a1a1a;
+                    border-radius: 12px;
+            s        color: white;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    font-size: 0.95rem;
+                  }
+
+                  .card.product-card:hover {
+                    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+                    transform: scale(1.03);
+                  }
+
+                .card-img-top {
+        height: 360px; /* Más alto */
+        object-fit: cover;
+      }
+
+
+                  .product-title {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                  }
+
+                  .btn-ver-mas {
+                    background-color: #ff9900;
+                    color: white;
+                    border: none;
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 8px;
+                    font-size: 0.9rem;
+                  }
+
+                  .btn-ver-mas:hover {
+                    background-color: #e68a00;
+                  }
+    </style>
+  </head>
+
+  <body class="bg-black">
+    <header class="position-sticky top-0 z-3">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="/index (12).html"
+            >RollingAnime</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex justify-content-center bg-primary w-50">
+            <form class="d-flex bg-danger w-100" role="Busca tu manga">
+              <input
+                class="form-control me-2"
+                type="Busca tu manga"
+                placeholder="Busca tu manga"
+                aria-label="Busca tu manga"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Busca tu manga
+              </button>
+            </form>
+          </div>
+          <div class="w-25">
+            <div
+              class="collapse navbar-collapse d-flex justify-content-end w-100"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index (12).html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <button class="btn btn-outline-light">Iniciar sesion</button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container py-5">
+      <h2
+        class="text-white text-center mb-3"
+        style="font-family: serif; font-size: 45px"
+      >
+        Nuestros productos
+      </h2>
+      <h3
+        class="text-white text-center mb-4"
+        style="font-family: serif; font-size: 20px"
+      >
+        Explora nuestros productos
+      </h3>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://cf.shopee.com.mx/file/cn-11134207-7r98o-ll5vcfjrp6eka4"
+              class="card-img-top"
+              alt="Kimetsu no Yaiba"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Kimetsu no Yaiba #01</h5>
+              <p class="text-white mb-2">$7.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://http2.mlstatic.com/D_NQ_NP_979483-MLA74799920598_032024-O.webp"
+              class="card-img-top"
+              alt="FireForce"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Fire Force #01</h5>
+              <p class="text-white mb-2">$11.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://kurosuki.com.co/wp-content/uploads/2024/07/ARETES-TANJIRO-PERFORACION.jpg"
+              class="card-img-top"
+              alt="TOKYO"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Tokyo Ghoul #01</h5>
+              <p class="text-white mb-2">$8.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://m.media-amazon.com/images/I/61d5U5cYq8L._AC_UY1000_.jpg"
+              class="card-img-top"
+              alt="DD"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Death Note #01</h5>
+              <p class="text-white mb-2">$9.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://http2.mlstatic.com/D_NQ_NP_783721-MLA47137292560_082021-O.webp"
+              class="card-img-top"
+              alt="Evangelion"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Evangelion #01</h5>
+              <p class="text-white mb-2">$8.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxECYPVxZq4k1dnzxBxOR5YQl81IA4N5PjPQ&s"
+              class="card-img-top"
+              alt="Shingeki no Kyojin"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Shingeki no Kyojin #01</h5>
+              <p class="text-white mb-2">$11.800</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://http2.mlstatic.com/D_706024-MLA45131992579_032021-C.jpg"
+              class="card-img-top"
+              alt="Naruto"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Naruto #01</h5>
+              <p class="text-white mb-2">$12.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://ae01.alicdn.com/kf/S43711e1c651f4b17bdedc3059ac25acfs.jpg_640x640q90.jpg"
+              class="card-img-top"
+              alt="Dragon Ball Super"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Dragon Ball Super #01</h5>
+              <p class="text-white mb-2">$4.000</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRFdyZH91N5htBC6O-jw3BvT8xmioJMtdidWuXtt5nvgQSbJ2wHq3x38iu3yAE_qVOgS6hhPTlSLzdHn91k47bM0OtgCsA5JO4hBp7P2-tuFsU7mUTS1m_i3bw"
+              class="card-img-top"
+              alt="Hunter x Hunter"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Hunter x Hunter #01</h5>
+              <p class="text-white mb-2">$8.500</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvUpYl0_3gnBq0VhfmgzzaAsjNRaoU08Yib6cRom_Q_0BGzU1n0mVu1_1cB-b3iX01r5EZYC2ehd4Tw4I7JBFuMrnWTCs-VrBsPTBvRf2ER5a9ZIodiV4UhJE"
+              class="card-img-top"
+              alt="Haikyuu"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Haikyuu!! #01</h5>
+              <p class="text-white mb-2">$6.750</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSdUvWB4LMm_UBcFF9kQ7RQbGsSacxAvH74R3lL1_rS2OneDPoAJcB0H6hGFqMTzNdoiIAJjJ8XHnhUdlfpWLq8kbEbM-PbXsS0zJ0-mukt"
+              class="card-img-top"
+              alt="Black Clover"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Black Clover #01</h5>
+              <p class="text-white mb-2">$6.900</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQdRQeQ1DdNXqoCBybjgahmITZ4fNlG4oGEcPmMl_f0007EfEt7qVvUH37ZDn0aZOYH4M6TetiuRiWeAm7gdtIp40CATSW21NMu2LBUj2IG"
+              class="card-img-top"
+              alt="Slam Dunk"
+            />
+            <div class="card-body text-center">
+              <h5 class="product-title">Manga Slam Dunk #01</h5>
+              <p class="text-white mb-2">$10.420</p>
+              <a href="#" class="btn btn-ver-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="d-flex flex-column align-items-center row-gap-3 pt-3 bg-dark"
+    >
+      <div class="formulario w-100">
+        <p class="text-center text-white p-2 pt-2">
+          Suscribite para recibir nuestras ofertas.
+        </p>
+        <form class="d-flex gap-3 justify-content-center" action="">
+          <input
+            class="form-control bg-black text-white w-50"
+            type="email"
+            name=""
+            id=""
+            placeholder="ejemplo@gmail.com"
+          />
+          <button class="btn btn-outline-success w-25">Enviar</button>
+        </form>
+      </div>
+      <div class="">
+        <h5 class="text-white">Sobre Nosotros</h5>
+        <div class="d-flex flex-column align-items-center">
+          <a class="text-decoration-none text-white" href="">Nosotros</a>
+          <a class="text-decoration-none text-white" href="">Ejemplo</a>
+          <a class="text-decoration-none text-white" href="">Ejemplo</a>
+        </div>
+      </div>
+      <div class="">
+        <div class="d-flex w-50 m-auto justify-content-center gap-4">
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/cfb98feaa410a1117ce810b79ef3fd86/9e96811886d36bfc-9c/s540x810/188a850f3052e6427131126f708e0200d7042788.pnj"
+            alt=""
+          />
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/83117e949bb7b7c7b3508bd7f49a5e7e/e88b93a6e22b2b80-e4/s540x810/a625e0c057c366ca8f440634b377de1dbc7f24d1.pnj"
+            alt=""
+          />
+          <img
+            width="35px"
+            src="https://64.media.tumblr.com/7dee361859fd257486b4e46738addfb7/740cdaab71bba2c4-8b/s540x810/406c4c5a13b99fa1808cac8d116cb7ec2ef6aff9.pnj"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="w-100 bg-dark">
+        <div>
+          <p class="text-center text-white p-2">©2025, AnimeGenerico.</p>
+        </div>
+      </div>
+      <div class="final bg-black w-100 h-50 bg-white">
+        <div></div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (opcional, para funcionalidad extra como modals, tooltips, etc) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
